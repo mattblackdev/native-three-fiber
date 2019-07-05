@@ -9,15 +9,23 @@
   },
   "dependencies": {
     "expo": "^33.0.0",
+    "expo-file-system": "~5.0.1",
     "expo-gl": "^5.0.1",
+    "expo-graphics": "^1.1.0",
+    "expo-three": "^3.0.0-alpha.8",
+    "lodash-es": "^4.17.11",
     "react": "16.8.3",
     "react-dom": "^16.8.6",
     "react-native": "https://github.com/expo/react-native/archive/sdk-33.0.0.tar.gz",
-    "react-native-web": "^0.11.4"
+    "react-native-web": "^0.11.4",
+    "react-reconciler": "^0.20.4",
+    "scheduler": "0.13.3",
+    "three": "^0.106.2"
   },
   "devDependencies": {
     "@types/react": "^16.8.19",
     "@types/react-native": "^0.57.60",
+    "@types/three": "^0.103.2",
     "babel-preset-expo": "^5.1.1",
     "typescript": "^3.4.5"
   },

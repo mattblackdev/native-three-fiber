@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "target": "es5",
     "noEmit": true,
     "lib": ["dom", "esnext"],
     "jsx": "react-native",
