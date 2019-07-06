@@ -799,7 +799,7 @@
     pirates "^4.0.0"
     source-map-support "^0.5.9"
 
-"@babel/runtime@^7.0.0", "@babel/runtime@^7.1.2":
+"@babel/runtime@^7.0.0", "@babel/runtime@^7.1.2", "@babel/runtime@^7.4.4":
   version "7.5.0"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.5.0.tgz#49dcbcd637099a55d3a61e590a00d6861393b1b5"
   integrity sha512-2xsuyZ0R0RBFwjgae5NpXk8FcfH4qovj5cEM5VEeB7KXnKqzaisIu2HSV/mCEISolJJuR4wkViUGYujA8MH9tw==
@@ -4438,6 +4438,11 @@ plugin-error@^0.1.2:
     arr-union "^2.0.1"
     extend-shallow "^1.1.2"
 
+pointer-events-polyfill@^0.4.4-pre:
+  version "0.4.4-pre"
+  resolved "https://registry.yarnpkg.com/pointer-events-polyfill/-/pointer-events-polyfill-0.4.4-pre.tgz#d745eb0cef8aa3f661cdba1364b9728b46d0872f"
+  integrity sha512-t7iitVY5jW9mGOFZEHphJOzB8eMhoYaE6I5HqsUX14rjsPa9F6OlMOCj3EpqDzNb/8XtMk2BxMpOyePPyuefHw==
+
 posix-character-classes@^0.1.0:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/posix-character-classes/-/posix-character-classes-0.1.1.tgz#01eac0fe3b5af71a2a6c02feabb8c1fef7e00eab"
@@ -4749,6 +4754,19 @@ react-reconciler@^0.20.4:
     prop-types "^15.6.2"
     scheduler "^0.13.6"
 
+react-three-fiber@^2.2.10:
+  version "2.2.10"
+  resolved "https://registry.yarnpkg.com/react-three-fiber/-/react-three-fiber-2.2.10.tgz#a901fbfcb718cd8c12be5cd48ee3d93b176182e2"
+  integrity sha512-SDftfa3sWVTFEB6gl1AKnGs2XqErvqzHWj8yEpkyQWTFcgYP/bfSvjaTvLETp5OybWW+k9DLvC3iPkpQeCQyGg==
+  dependencies:
+    "@babel/runtime" "^7.4.4"
+    "@types/three" "^0.103.2"
+    lodash-es "^4.17.11"
+    pointer-events-polyfill "^0.4.4-pre"
+    react-reconciler "^0.20.4"
+    resize-observer-polyfill "^1.5.1"
+    scheduler "0.13.3"
+
 react-timer-mixin@^0.13.4:
   version "0.13.4"
   resolved "https://registry.yarnpkg.com/react-timer-mixin/-/react-timer-mixin-0.13.4.tgz#75a00c3c94c13abe29b43d63b4c65a88fc8264d3"
@@ -4919,6 +4937,11 @@ reselect@^3.0.1:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/reselect/-/reselect-3.0.1.tgz#efdaa98ea7451324d092b2b2163a6a1d7a9a2147"
   integrity sha1-79qpjqdFEyTQkrKyFjpqHXqaIUc=
+
+resize-observer-polyfill@^1.5.1:
+  version "1.5.1"
+  resolved "https://registry.yarnpkg.com/resize-observer-polyfill/-/resize-observer-polyfill-1.5.1.tgz#0e9020dd3d21024458d4ebd27e23e40269810464"
+  integrity sha512-LwZrotdHOo12nQuZlHEmtuXdqGoOD0OhaxopaNFxWzInpEgaLWoVuAMbTzixuosCx2nEG58ngzW3vxdWoxIgdg==
 
 resolve-from@^3.0.0:
   version "3.0.0"
