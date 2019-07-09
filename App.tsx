@@ -24,7 +24,6 @@ function useRender(cb: () => void, deps: [] = []) {
   React.useEffect(() => {
     const { subscribers } = state.current
     subscribers.push(cb)
-    console.warn(`Subscribers: ${subscribers.length}`)
     return () => (state.current.subscribers = subscribers.filter(i => i !== cb))
   }, deps)
 }
@@ -85,6 +84,17 @@ function Scene({ children }) {
       onTouchEnd={() => {
         setReady(ready => !ready)
       }}
+      onLayout={e => {
+        if (!ready) return
+        const { width, height } = e.nativeEvent.layout
+        const { gl, camera, renderer } = state.current
+        const scale = PixelRatio.get()
+        gl.viewport(0, 0, width * scale, height * scale)
+        renderer.setSize(width, height)
+        const aspect = width / height
+        camera.aspect = aspect
+        camera.updateProjectionMatrix()
+      }}
     />
   )
 }
@@ -135,6 +145,8 @@ export default function App() {
       <Donut position={[20, 50, -60]} />
       <Donut position={[-20, -50, -60]} />
       <Donut position={[20, -50, -60]} />
+      <Donut position={[-40, 0, 10]} />
+      <Donut position={[40, 0, 10]} />
       <Lights />
     </Scene>
   )
