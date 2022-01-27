@@ -21,7 +21,7 @@
     "react-reconciler": "^0.20.4",
     "react-three-fiber": "^2.2.10",
     "scheduler": "0.13.3",
-    "three": "^0.106.2"
+    "three": "^0.137.0"
   },
   "devDependencies": {
     "@types/react": "^16.8.19",
